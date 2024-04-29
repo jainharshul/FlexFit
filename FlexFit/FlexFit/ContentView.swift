@@ -8,44 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    init() {
+            UITabBar.appearance().barTintColor = UIColor.black
+            UITabBar.appearance().tintColor = UIColor.white
+    }
     var body: some View {
-        
-        VStack {
-            Image(.flexfitAppiconTransparent)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .padding()
-                .background(Rectangle()
-                .foregroundColor(Color(red: 0.36, green: 0.43, blue: 0.52, opacity: 1.0)))
-                VStack {
-                    Text("Welcome to FlexFit")
-                    .foregroundColor(.white)
-                    .font(.title.bold())
-                    Button ("Calculate BMR"){  }
-                        .foregroundColor(.white)
-                        //.buttonStyle(.bordered)
-                        .controlSize(.extraLarge)
-                        .frame(width: 200, height: 50)
-                        .background(Rectangle().fill(Color(red: 0.36, green: 0.43, blue: 0.52, opacity: 1.0)))
-                    Button ("Calculate BMI"){  }
-                        .foregroundColor(.white)
-                        //.buttonStyle(.bordered)
-                        .controlSize(.extraLarge)
-                        .frame(width: 200, height: 50)
-                        .background(Rectangle().fill(Color(red: 0.36, green: 0.43, blue: 0.52, opacity: 1.0)))
-                    Button ("Look up Exercises"){  }
-                        .foregroundColor(.white)
-                        //.buttonStyle(.bordered)
-                        .controlSize(.extraLarge)
-                        .frame(width: 200, height: 50)
-                        .background(Rectangle().fill(Color(red: 0.36, green: 0.43, blue: 0.52, opacity: 1.0)))
-                    }
-            }
-        .padding()
-        .frame(maxHeight: .infinity)
-        .background(Rectangle()
-            .foregroundColor(Color(red: 0.22, green: 0.22, blue: 0.22, opacity: 1.0)))
-        .edgesIgnoringSafeArea(.all)
+        TabView {
+            HomeView()
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text("Home")
+                }
+
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("Profile")
+                }
+            
+            SettingsView()
+                .tabItem {
+                    Image(systemName: "gearshape.fill")
+                    Text("Settings")
+                }
+        }        
+        .background(Color(UIColor.systemBackground))
     }
 }
 

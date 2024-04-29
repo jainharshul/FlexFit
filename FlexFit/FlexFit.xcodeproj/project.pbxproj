@@ -15,6 +15,12 @@
 		0A8FC0D02BD75491008467CE /* FlexFitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8FC0CF2BD75491008467CE /* FlexFitUITests.swift */; };
 		0A8FC0D22BD75491008467CE /* FlexFitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8FC0D12BD75491008467CE /* FlexFitUITestsLaunchTests.swift */; };
 		0AE3E2CE2BDB0C0400D5B1A9 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3E2CD2BDB0C0400D5B1A9 /* Launch Screen.storyboard */; };
+		ADC41F982BDDD07000F05820 /* BMRCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC41F972BDDD07000F05820 /* BMRCalculatorView.swift */; };
+		ADC41F9A2BDDD2B700F05820 /* BMICalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC41F992BDDD2B700F05820 /* BMICalculatorView.swift */; };
+		ADC41F9C2BDDD2FC00F05820 /* WorkoutsMainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC41F9B2BDDD2FC00F05820 /* WorkoutsMainPageView.swift */; };
+		ADC41F9E2BDDDC6100F05820 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC41F9D2BDDDC6100F05820 /* HomeView.swift */; };
+		ADC41FA02BDDDC9C00F05820 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC41F9F2BDDDC9C00F05820 /* ProfileView.swift */; };
+		ADC41FA22BDDDCA800F05820 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC41FA12BDDDCA800F05820 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,12 @@
 		0A8FC0CF2BD75491008467CE /* FlexFitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexFitUITests.swift; sourceTree = "<group>"; };
 		0A8FC0D12BD75491008467CE /* FlexFitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexFitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0AE3E2CD2BDB0C0400D5B1A9 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		ADC41F972BDDD07000F05820 /* BMRCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMRCalculatorView.swift; sourceTree = "<group>"; };
+		ADC41F992BDDD2B700F05820 /* BMICalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculatorView.swift; sourceTree = "<group>"; };
+		ADC41F9B2BDDD2FC00F05820 /* WorkoutsMainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsMainPageView.swift; sourceTree = "<group>"; };
+		ADC41F9D2BDDDC6100F05820 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		ADC41F9F2BDDDC9C00F05820 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		ADC41FA12BDDDCA800F05820 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,12 @@
 				0AE3E2CD2BDB0C0400D5B1A9 /* Launch Screen.storyboard */,
 				0A8FC0B82BD75491008467CE /* Assets.xcassets */,
 				0A8FC0BA2BD75491008467CE /* Preview Content */,
+				ADC41F972BDDD07000F05820 /* BMRCalculatorView.swift */,
+				ADC41F992BDDD2B700F05820 /* BMICalculatorView.swift */,
+				ADC41F9B2BDDD2FC00F05820 /* WorkoutsMainPageView.swift */,
+				ADC41F9D2BDDDC6100F05820 /* HomeView.swift */,
+				ADC41F9F2BDDDC9C00F05820 /* ProfileView.swift */,
+				ADC41FA12BDDDCA800F05820 /* SettingsView.swift */,
 			);
 			path = FlexFit;
 			sourceTree = "<group>";
@@ -261,8 +279,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADC41F982BDDD07000F05820 /* BMRCalculatorView.swift in Sources */,
+				ADC41FA22BDDDCA800F05820 /* SettingsView.swift in Sources */,
 				0A8FC0B72BD7548F008467CE /* ContentView.swift in Sources */,
+				ADC41F9C2BDDD2FC00F05820 /* WorkoutsMainPageView.swift in Sources */,
+				ADC41F9E2BDDDC6100F05820 /* HomeView.swift in Sources */,
 				0A8FC0B52BD7548F008467CE /* FlexFitApp.swift in Sources */,
+				ADC41FA02BDDDC9C00F05820 /* ProfileView.swift in Sources */,
+				ADC41F9A2BDDD2B700F05820 /* BMICalculatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
