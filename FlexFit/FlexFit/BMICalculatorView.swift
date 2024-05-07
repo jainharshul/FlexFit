@@ -28,7 +28,7 @@ struct BMICalculatorView: View {
                 Text("Height (in):")
                     .foregroundColor(.white)
                 Spacer()
-                TextField("Enter height", text: $height)
+                TextField("Enter height (in)", text: $height)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(width: 150)
                     .keyboardType(.decimalPad)
@@ -38,7 +38,7 @@ struct BMICalculatorView: View {
                 Text("Weight (lb):")
                     .foregroundColor(.white)
                 Spacer()
-                TextField("Enter weight", text: $weight)
+                TextField("Enter weight (lb)", text: $weight)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(width: 150)
                     .keyboardType(.decimalPad)
@@ -46,6 +46,7 @@ struct BMICalculatorView: View {
 
             Button("Calculate") {
                 calculateBMI()
+                saveToUserDefaults()
             }
             .foregroundColor(.white)
             .frame(width: 200, height: 50)
@@ -92,6 +93,12 @@ struct BMICalculatorView: View {
         height = ""
         result = nil
         showingResult = false // Reset the flag to hide the result
+    }
+    
+    func saveToUserDefaults(){
+        if let result = result {
+            UserDefaults.standard.set(result, forKey: "bmi")
+        }
     }
 }
 
