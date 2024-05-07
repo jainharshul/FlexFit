@@ -59,7 +59,7 @@ struct AbExercisesView: View {
                             }
                             .buttonStyle(PlainButtonStyle())
                             
-                            // Repeat the same pattern for each muscle
+                            
                             
                             NavigationLink(destination: TricepExercisesView()) {
                                 ZStack(alignment: .bottom) {
@@ -91,7 +91,7 @@ struct AbExercisesView: View {
                             }
                             .buttonStyle(PlainButtonStyle())
                             
-                            // Repeat the same pattern for each muscle
+                            
                             
                             NavigationLink(destination: QuadExercisesView()) {
                                 ZStack(alignment: .bottom) {
@@ -123,7 +123,7 @@ struct AbExercisesView: View {
                             }
                             .buttonStyle(PlainButtonStyle())
                             
-                            // Repeat the same pattern for each muscle
+                            
                             
                             NavigationLink(destination: ShoulderExercisesView()) {
                                 ZStack(alignment: .bottom) {
@@ -155,7 +155,7 @@ struct AbExercisesView: View {
                             }
                             .buttonStyle(PlainButtonStyle())
                             
-                            // Repeat the same pattern for each muscle
+                            
                             
                             NavigationLink(destination: BicepExercisesView()) {
                                 ZStack(alignment: .bottom) {
@@ -187,7 +187,7 @@ struct AbExercisesView: View {
                             }
                             .buttonStyle(PlainButtonStyle())
                             
-                            // Repeat the same pattern for each muscle
+                            
                             
                             NavigationLink(destination: AbExercisesView()) {
                                 ZStack(alignment: .bottom) {

@@ -1,0 +1,34 @@
+{
+    
+    "BenchPress": {
+        "id": "BenchPress_image",
+        "name" : "BenchPress",
+        "description": "1.Lie on your back on a flat bench. Grip a barbell with hands slightly wider than shoulder width. The bar should be directly over the shoulders. \n 2.Press your feet firmly into the ground and keep your hips on the bench throughout the entire movement. \n 3.Keep your core engaged and maintain a neutral spine position throughout the movement. Avoid arching your back. \n 4.Slowly lift the bar or dumbbells off the rack, if using. Lower the bar to the chest, about nipple level, allowing elbows to bend out to the side, about 45 degrees away from the body. \n 5.Stop lowering when your elbows are just below the bench. Press feet into the floor as you push the bar back up to return to starting position."
+    },
+    "PushUps": {
+        "id": "PushUps_image",
+        "name": "PushUps",
+        "description": "1.Lower your body onto the ground, getting on your hands and toes in a plank position. Place your hands and feet shoulder width apart. \n 2.Make sure you have your back as straight as possible. When you are ready, lower yourself by bending at the elbow, making sure your shoulders stay firm. \n 3.Once your arms make a right angle then you can start pushing back up."
+    },
+    "CableCross": {
+        "id": "CableCrossover_image",
+        "name": "Cable Cross",
+        "description": "1.Ensure cables are adjusted at chest height. Stand with your back toward the cable machine. Grab the handles and hold them out to the side of your body with your palms facing forward. Draw in and brace your abs. Lock shoulder blades back and down. \n 2.Drive the hands forward and together in an arcing motion allowing the hands to pass with one hand above and one below. \n 3.Reverse the pattern and return to the starting position moving through a maximum range of motion that technique can be maintained. \n 4.Repeat, alternating the top/bottom hand. Maintain posture throughout. Avoid arching or slouching the back, jutting the chin forward, slouching or shrugging the shoulders."
+    },
+    "Dips": {
+        "id": "Dips_image",
+        "name": "Dips",
+        "description": "1.Grip a dip station about shoulder-width apart, and climb or jump to get into the starting position. \n 2.Lower yourself with control until your shoulder is below your elbow, or as deep as you comfortably can. \n 3.Reverse the motion and return to the starting position. "
+    },
+    "InclinePress": {
+        "id": "InclinePress_image",
+        "name": "Incline Press",
+        "description": "1.Lie flat on an inclined bench. \n 2.Keep your spine neutral and feet flat on the floor. \n 3.Grasp the barbell at about 1½ times the width of your shoulders. \n 4.Lift the barbell off the rack and lower it by bending your elbows. \n 5.Reverse the movement, lifting the barbell away from your chest. \n 6.Your elbows should be under the bar at all times for proper balance. \n 7.Remember not to arch your back or thrust your head forward. "
+    },
+    "MachineFly": {
+        "id": "ChestFly_image",
+        "name": "Machine Fly",
+        "description": " 1.Set up the chest fly machine so that when seated, the handles are at chest height and in line with the shoulders. \n 2.Select the weight then sit down, making sure your head and back is firmly against the seat. \n 3.Grab the handles with your palms facing each other and pin your shoulder blades back. \n 4.Take a deep breath before squeezing your chest muscles and pushing the handles together and in front of your chest. Keep a soft bend in the elbows and shoulders pinned throughout. \n 5.Slowly return the handles back to the start."
+    }
+    
+}

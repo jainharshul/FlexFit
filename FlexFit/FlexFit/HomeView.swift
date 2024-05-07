@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+   
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -37,7 +39,7 @@ struct HomeView: View {
                             .background(Rectangle().fill(Color(red: 0.36, green: 0.43, blue: 0.52, opacity: 1.0)))
                     }
 
-                    NavigationLink(destination: WorkoutsMainPageView()) {
+                    NavigationLink(destination: MusclesMainPageView()) {
                         Text("Look up exercises")
                             .foregroundColor(.white)
                             .frame(width: 200, height: 50)
