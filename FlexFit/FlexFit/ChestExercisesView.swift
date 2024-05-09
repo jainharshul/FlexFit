@@ -14,17 +14,14 @@ struct ChestExercisesView: View {
                         .foregroundColor(.white)
                         .padding(.top, 20)
                     
-                    ZStack {
+                    ZStack(alignment: .center){
                         RoundedRectangle(cornerRadius: 10)
                             .foregroundColor(Color.gray.opacity(0.2))
-                            .frame(height: 50)
-                            .padding(.leading)
-                        Text("Please select the muscle you want to workout")
+                            .frame(height: 80)
+                        Text("Please select an exercise you would like to workout")
                             .font(.headline)
-                            .padding(.top, 10)
                             .foregroundColor(.white)
                     }
-                    .padding(.leading)
                     .padding(.horizontal)
                     
                     ScrollView {
@@ -33,6 +30,9 @@ struct ChestExercisesView: View {
                                 ZStack(alignment: .bottom) {
                                     Color.black
                                         .cornerRadius(30)
+                                        .buttonStyle(PlainButtonStyle())
+                                        .opacity(0.5)
+                                        .shadow(radius: 4)
                                     
                                     VStack {
                                         Image("BenchPress_image")
@@ -41,23 +41,18 @@ struct ChestExercisesView: View {
                                             .scaledToFit()
                                             .frame(width: 150, height: 150)
                                             .cornerRadius(30)
+                                            .padding(.top)
                                         
                                         Text("Bench press".uppercased())
                                             .padding(.horizontal, 16)
-                                            .padding(8)
-                                            .background(Color.black)
-                                            .cornerRadius(8)
                                             .foregroundColor(.white)
                                             .font(.headline.bold())
-                                            .fixedSize(horizontal: true, vertical: false)
-                                            .lineLimit(1)
-                                            .frame(maxWidth: 140)
+                                            .padding(.bottom)
                                     }
                                     .cornerRadius(30)
                                     .shadow(radius: 4)
                                 }
                             }
-                            .buttonStyle(PlainButtonStyle())
                             
                             
                             
@@ -65,7 +60,10 @@ struct ChestExercisesView: View {
                                 ZStack(alignment: .bottom) {
                                     Color.black
                                         .cornerRadius(30)
-                                    
+                                        .buttonStyle(PlainButtonStyle())
+                                        .opacity(0.5)
+                                        .shadow(radius: 4)
+
                                     VStack {
                                         Image("PushUps_image")
                                             .resizable()
@@ -73,23 +71,18 @@ struct ChestExercisesView: View {
                                             .scaledToFit()
                                             .frame(width: 150, height: 150)
                                             .cornerRadius(30)
+                                            .padding(.top)
                                         
                                         Text("Push ups".uppercased())
                                             .padding(.horizontal, 16)
-                                            .padding(8)
-                                            .background(Color.black.opacity(0.5))
-                                            .cornerRadius(8)
                                             .foregroundColor(.white)
                                             .font(.headline.bold())
-                                            .fixedSize(horizontal: true, vertical: false)
-                                            .lineLimit(1)
-                                            .frame(maxWidth: 140)
+                                            .padding(.bottom)
                                     }
                                     .cornerRadius(30)
                                     .shadow(radius: 4)
                                 }
                             }
-                            .buttonStyle(PlainButtonStyle())
                             
                             
                             
@@ -97,6 +90,9 @@ struct ChestExercisesView: View {
                                 ZStack(alignment: .bottom) {
                                     Color.black
                                         .cornerRadius(30)
+                                        .buttonStyle(PlainButtonStyle())
+                                        .opacity(0.5)
+                                        .shadow(radius: 4)
                                     
                                     VStack {
                                         Image("CableCrossover_image")
@@ -105,23 +101,18 @@ struct ChestExercisesView: View {
                                             .scaledToFit()
                                             .frame(width: 150, height: 150)
                                             .cornerRadius(30)
+                                            .padding(.top)
                                         
                                         Text("Cable Cross".uppercased())
                                             .padding(.horizontal, 16)
-                                            .padding(8)
-                                            .background(Color.black.opacity(0.5))
-                                            .cornerRadius(8)
                                             .foregroundColor(.white)
                                             .font(.headline.bold())
-                                            .fixedSize(horizontal: true, vertical: false)
-                                            .lineLimit(1)
-                                            .frame(maxWidth: 140)
+                                            .padding(.bottom)
                                     }
                                     .cornerRadius(30)
                                     .shadow(radius: 4)
                                 }
                             }
-                            .buttonStyle(PlainButtonStyle())
                             
                             
                             
@@ -129,6 +120,9 @@ struct ChestExercisesView: View {
                                 ZStack(alignment: .bottom) {
                                     Color.black
                                         .cornerRadius(30)
+                                        .buttonStyle(PlainButtonStyle())
+                                        .opacity(0.5)
+                                        .shadow(radius: 4)
                                     
                                     VStack {
                                         Image("Dips_image")
@@ -137,23 +131,18 @@ struct ChestExercisesView: View {
                                             .scaledToFit()
                                             .frame(width: 150, height: 150)
                                             .cornerRadius(30)
+                                            .padding(.top)
                                         
                                         Text("dips".uppercased())
                                             .padding(.horizontal, 16)
-                                            .padding(8)
-                                            .background(Color.black.opacity(0.5))
-                                            .cornerRadius(8)
                                             .foregroundColor(.white)
                                             .font(.headline.bold())
-                                            .fixedSize(horizontal: true, vertical: false)
-                                            .lineLimit(1)
-                                            .frame(maxWidth: 140)
+                                            .padding(.bottom)
                                     }
                                     .cornerRadius(30)
                                     .shadow(radius: 4)
                                 }
                             }
-                            .buttonStyle(PlainButtonStyle())
                             
                             
                             
@@ -161,6 +150,9 @@ struct ChestExercisesView: View {
                                 ZStack(alignment: .bottom) {
                                     Color.black
                                         .cornerRadius(30)
+                                        .buttonStyle(PlainButtonStyle())
+                                        .opacity(0.5)
+                                        .shadow(radius: 4)
                                     
                                     VStack {
                                         Image("InclinePress_image")
@@ -169,23 +161,18 @@ struct ChestExercisesView: View {
                                             .scaledToFit()
                                             .frame(width: 150, height: 150)
                                             .cornerRadius(30)
+                                            .padding(.top)
                                         
                                         Text("Incline Press".uppercased())
                                             .padding(.horizontal, 16)
-                                            .padding(8)
-                                            .background(Color.black.opacity(0.5))
-                                            .cornerRadius(8)
                                             .foregroundColor(.white)
                                             .font(.headline.bold())
-                                            .fixedSize(horizontal: true, vertical: false)
-                                            .lineLimit(1)
-                                            .frame(maxWidth: 140)
+                                            .padding(.bottom)
                                     }
                                     .cornerRadius(30)
                                     .shadow(radius: 4)
                                 }
                             }
-                            .buttonStyle(PlainButtonStyle())
                             
                             
                             
@@ -193,6 +180,9 @@ struct ChestExercisesView: View {
                                 ZStack(alignment: .bottom) {
                                     Color.black
                                         .cornerRadius(30)
+                                        .buttonStyle(PlainButtonStyle())
+                                        .opacity(0.5)
+                                        .shadow(radius: 4)
                                     
                                     VStack {
                                         Image("ChestFly_image")
@@ -201,23 +191,18 @@ struct ChestExercisesView: View {
                                             .scaledToFit()
                                             .frame(width: 150, height: 150)
                                             .cornerRadius(30)
+                                            .padding(.top)
                                         
                                         Text("Machine Fly".uppercased())
                                             .padding(.horizontal, 16)
-                                            .padding(8)
-                                            .background(Color.black.opacity(0.5))
-                                            .cornerRadius(8)
                                             .foregroundColor(.white)
                                             .font(.headline.bold())
-                                            .fixedSize(horizontal: true, vertical: false)
-                                            .lineLimit(1)
-                                            .frame(maxWidth: 140)
+                                            .padding(.bottom)
                                     }
                                     .cornerRadius(30)
                                     .shadow(radius: 4)
                                 }
                             }
-                            .buttonStyle(PlainButtonStyle())
                         }
                         .padding(.horizontal)
                     }

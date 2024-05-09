@@ -3,32 +3,181 @@
     "BenchPress": {
         "id": "BenchPress_image",
         "name" : "BenchPress",
-        "description": "1.Lie on your back on a flat bench. Grip a barbell with hands slightly wider than shoulder width. The bar should be directly over the shoulders. \n 2.Press your feet firmly into the ground and keep your hips on the bench throughout the entire movement. \n 3.Keep your core engaged and maintain a neutral spine position throughout the movement. Avoid arching your back. \n 4.Slowly lift the bar or dumbbells off the rack, if using. Lower the bar to the chest, about nipple level, allowing elbows to bend out to the side, about 45 degrees away from the body. \n 5.Stop lowering when your elbows are just below the bench. Press feet into the floor as you push the bar back up to return to starting position."
+        "description": "1.Lie on your back on a flat bench. Grip a barbell with hands slightly wider than shoulder width. The bar should be directly over the shoulders. \n\n 2.Press your feet firmly into the ground and keep your hips on the bench throughout the entire movement. \n\n 3.Keep your core engaged and maintain a neutral spine position throughout the movement. Avoid arching your back. \n\n 4.Slowly lift the bar or dumbbells off the rack, if using. Lower the bar to the chest, about nipple level, allowing elbows to bend out to the side, about 45 degrees away from the body. \n\n 5.Stop lowering when your elbows are just below the bench. Press feet into the floor as you push the bar back up to return to starting position."
     },
     "PushUps": {
         "id": "PushUps_image",
         "name": "PushUps",
-        "description": "1.Lower your body onto the ground, getting on your hands and toes in a plank position. Place your hands and feet shoulder width apart. \n 2.Make sure you have your back as straight as possible. When you are ready, lower yourself by bending at the elbow, making sure your shoulders stay firm. \n 3.Once your arms make a right angle then you can start pushing back up."
+        "description": "1.Lower your body onto the ground, getting on your hands and toes in a plank position. Place your hands and feet shoulder width apart. \n\n 2.Make sure you have your back as straight as possible. When you are ready, lower yourself by bending at the elbow, making sure your shoulders stay firm. \n\n 3.Once your arms make a right angle then you can start pushing back up."
     },
     "CableCross": {
         "id": "CableCrossover_image",
         "name": "Cable Cross",
-        "description": "1.Ensure cables are adjusted at chest height. Stand with your back toward the cable machine. Grab the handles and hold them out to the side of your body with your palms facing forward. Draw in and brace your abs. Lock shoulder blades back and down. \n 2.Drive the hands forward and together in an arcing motion allowing the hands to pass with one hand above and one below. \n 3.Reverse the pattern and return to the starting position moving through a maximum range of motion that technique can be maintained. \n 4.Repeat, alternating the top/bottom hand. Maintain posture throughout. Avoid arching or slouching the back, jutting the chin forward, slouching or shrugging the shoulders."
+        "description": "1.Ensure cables are adjusted at chest height. Stand with your back toward the cable machine. Grab the handles and hold them out to the side of your body with your palms facing forward. Draw in and brace your abs. Lock shoulder blades back and down. \n\n 2.Drive the hands forward and together in an arcing motion allowing the hands to pass with one hand above and one below. \n\n 3.Reverse the pattern and return to the starting position moving through a maximum range of motion that technique can be maintained. \n\n 4.Repeat, alternating the top/bottom hand. Maintain posture throughout. Avoid arching or slouching the back, jutting the chin forward, slouching or shrugging the shoulders."
     },
     "Dips": {
         "id": "Dips_image",
         "name": "Dips",
-        "description": "1.Grip a dip station about shoulder-width apart, and climb or jump to get into the starting position. \n 2.Lower yourself with control until your shoulder is below your elbow, or as deep as you comfortably can. \n 3.Reverse the motion and return to the starting position. "
+        "description": "1.Grip a dip station about shoulder-width apart, and climb or jump to get into the starting position. \n\n 2.Lower yourself with control until your shoulder is below your elbow, or as deep as you comfortably can. \n\n 3.Reverse the motion and return to the starting position."
     },
     "InclinePress": {
         "id": "InclinePress_image",
         "name": "Incline Press",
-        "description": "1.Lie flat on an inclined bench. \n 2.Keep your spine neutral and feet flat on the floor. \n 3.Grasp the barbell at about 1½ times the width of your shoulders. \n 4.Lift the barbell off the rack and lower it by bending your elbows. \n 5.Reverse the movement, lifting the barbell away from your chest. \n 6.Your elbows should be under the bar at all times for proper balance. \n 7.Remember not to arch your back or thrust your head forward. "
+        "description": "1.Lie flat on an inclined bench. \n\n 2.Keep your spine neutral and feet flat on the floor. \n\n 3.Grasp the barbell at about 1½ times the width of your shoulders. \n\n 4.Lift the barbell off the rack and lower it by bending your elbows. \n\n 5.Reverse the movement, lifting the barbell away from your chest. \n\n 6.Your elbows should be under the bar at all times for proper balance. \n\n 7.Remember not to arch your back or thrust your head forward. "
     },
     "MachineFly": {
         "id": "ChestFly_image",
         "name": "Machine Fly",
-        "description": " 1.Set up the chest fly machine so that when seated, the handles are at chest height and in line with the shoulders. \n 2.Select the weight then sit down, making sure your head and back is firmly against the seat. \n 3.Grab the handles with your palms facing each other and pin your shoulder blades back. \n 4.Take a deep breath before squeezing your chest muscles and pushing the handles together and in front of your chest. Keep a soft bend in the elbows and shoulders pinned throughout. \n 5.Slowly return the handles back to the start."
-    }
-    
+        "description": " 1.Set up the chest fly machine so that when seated, the handles are at chest height and in line with the shoulders. \n\n 2.Select the weight then sit down, making sure your head and back is firmly against the seat. \n\n 3.Grab the handles with your palms facing each other and pin your shoulder blades back. \n\n 4.Take a deep breath before squeezing your chest muscles and pushing the handles together and in front of your chest. Keep a soft bend in the elbows and shoulders pinned throughout. \n\n 5.Slowly return the handles back to the start."
+    },
+    "SpiderCurl": {
+        "id": "SpiderCurl_image",
+        "name": "Spider Curl",
+        "description": "1.Set an incline bench to a 45-degree angle, get into a prone position by pushing your upper chest and shoulders into the backpad (with your head peeking over the top), and hold your barbell (or dumbbells) using a shoulder-width supinated (palms facing up) grip. \n\n 2.Keeping your chest and upper arms stationary, bend your elbows to curl the weight toward your shoulders. Pause and squeeze your biceps at the top of the movement. \n\n 3.Slowly extend your elbows to return to the starting position. \n\n 4.Reset and repeat for reps"
+    },
+    "BarbellCurl": {
+        "id": "BarBellCurl_image",
+        "name": "Barbell Curl",
+        "description": "1.Stand up straight, with your feet shoulder-width apart and your hands holding the barbell in an underhand grip. Your hands should be positioned just outside your hips. \n\n 2.Curl the bar towards your chest, engaging your core and keeping your chest up and shoulders back. You need to keep your elbows tight so that the biceps can be fully engaged. We find gripping the bar hard helps keep things nice and tight. \n\n 3.Feel for your bicep contraction, and hold it for a moment. We’re working our biceps here, so ensure you actually feel the contraction and pause in that spot before you lower. \n\n 4.Lower the bar, in a controlled manner forms the final part of the exercise. Aim to lower the bar in between 2 and 4 seconds. \n\n 5.Repeat, for as many reps feel comfortable."
+    },
+    "HammerCurl": {
+        "id": "HammerCurl_image",
+        "name": "Hammer Curl",
+        "description": "1.Bend at the elbow, lifting the lower arms to pull the weights toward the shoulders. Your upper arms are stationary and the wrists are in line with the forearms. \n\n 2.Hold for one second at the top of the movement. Your thumbs will be close to the shoulders and palms facing in, toward the midline of the body. \n\n 3.Lower the weights to return to the starting position."
+    },
+    "ConcentrationCurl": {
+        "id": "ConcentrationCurl_image",
+        "name": "Concentration Curl",
+        "description": "1.Sit down on a bench holding a dumbbell in your left hand, and rest your elbow on the inside of your left thigh. \n\n 2.Squeeze the left biceps and bring the dumbbell toward your chest. \n\n 3.Lower the left arm to the starting position, repeat, and then switch arms."
+    },
+    "DragCurl": {
+        "id": "DragCurl_image",
+        "name": "Drag Curl",
+        "description": "1.Begin by gripping a barbell with a palms-up shoulder-width grip with the barbell across your thighs. \n\n 2.Keep your chest up, shoulders down, and look straight ahead. \n\n 3.Pull your elbows back to contract your bicep and “drag” the barbell up to your body towards your shoulders. \n\n 4.Stop at the lower chest/upper ab level and pause then slowly lower the bar along the same path back to the starting position. Reset and repeat."
+    },
+    "ZottmanCurl": {
+        "id": "ZottmanCurl_image",
+        "name": "Zottman Curl",
+        "description": "1.Stand up straight holding a dumbbell in each hand with a supinated grip so that your palms are facing away from you, elbows by your side. \n\n 2.Engage your core and squeeze your biceps as you bend at the elbow to curl both dumbbells up to your shoulder. The top of your arms should remain still. \n\n 3.Pause in the top position before rotating your wrists inwards so that your palms are facing downwards. \n\n 4.Squeeze your biceps as you slowly lower the dumbbells until your arms are extended. \n\n 5.Rotate your wrists outwards so that your palms are facing upwards and repeat."
+    },
+    "CablePush": {
+        "id": "PushDown_image",
+        "name": "Cable Push",
+        "description": "1.Stand with one leg forward to place yourself in a balanced and stable position. \n\n 2.Rotate your shoulders slightly and keep your knees slightly bent to maintain balance. Brace your abdominal muscles.  \n\n 3.Inhale as you push the cable behind you forward while simultaneously pulling the cable in front of your back. \n\n 4.Exhale as you allow both cables to return to their original position in a slow, controlled movement. \n\n 5.Complete 3 to 8 reps, resting for a minute between sets."
+    },
+    "KickBacks": {
+        "id": "KickBack_image",
+        "name": "Kick Backs",
+        "description": "1: Kneel on the floor or on an exercise mat with your arms extended in front of you. You should be in a kneeling push-up position with your arms shoulder width apart. This is the starting position. \n\n 2: Lift your right leg until your hamstrings are in line with your back. Contract your glutes while performing this part of the exercise and hold the contraction at the top for a second. \n\n 3: Return to the starting position and repeat the process with your left leg. \n\n 4: Alternate legs until you have complete the number of reps in your set."
+    },
+    "SkullCrusher": {
+        "id": "SkullCrusher_image",
+        "name": "Skull Crusher",
+        "description": "1.Lie on a bench with a straight barbell or EZ bar on your lap. Place hands shoulder-width apart on the bar with palms facing down and wrists straight. \n\n 2.Raise the bar above your collarbone. \n\n 3.While keeping your shoulders stable, slowly bend at the elbows, bringing the weight down just past your head. Keep the elbows pointing straight ahead as you lower the weight. Hold for a count of two. \n\n 4.Straighten your elbows, pushing the weight back to the overhead starting position. Be sure to keep your arms perpendicular to your body and only extend your elbows. \n\n Pro tip: Keep your elbows in. Allowing them to flare out takes the load off the triceps. Likewise, if you let your arms move back and forth, you put a load on your shoulders, which takes away the muscle- and strength-building benefit to the triceps and can lead to injury."
+    },
+    "CloseBench": {
+        "id": "CloseGrip_image",
+        "name": "Close Bench",
+        "description": "1.Lie on the bench with your feet straight and flat on the floor. Grasp the barbell to narrower-than-shoulder-width apart. \n\n 2.Unrack the bar and bring it directly over shoulders with straight arms (this is the starting position). \n\n 3.Press the bar up, fully extending the arms returning to the starting position. Pause. \n\n 4.Repeat for the desired number of repetitions."
+    },
+    "TricepExtension": {
+        "id": "TricepExtension_image",
+        "name": "Tricep Extension",
+        "description": "1.Lift the dumbbell directly overhead. Ensure the head stays aligned over the chest, the core remains engaged, and the shoulders are relaxed. \n\n 2.Extend both arms fully, then exhale and slowly lower the weight, bringing the weight behind the head by bending at the elbows. Be sure the chest stays aligned over the hips and the back does not arch. \n\n 3.Inhale and reverse the movement once you reach a 90-degree bend at the elbow or slightly further, lifting the weight back to the starting position. The weight should not touch the back of the head when it is in its lowest position."
+    },
+    "Dips": {
+        "id": "Dips_image",
+        "name": "Dips Extension",
+        "description": "1.Grab your bars with your palms facing inward and your arms straight. \n\n 2.Slowly lower until your elbows are at right angles, ensuring they stay tucked against your body and don't flare out. \n\n 3.Drive yourself back up to the top and repeat."
+    },
+    "BarbellSquat": {
+        "id": "BarbellSquat_image",
+        "name": "Barbell Squat",
+        "description": "1.Set the barbell rack to about the same height as your collarbone. Facing the bar, step under it, and put your arms around it to either side of you. Make sure the bar is not on your neck, but rather, sitting on top of your shoulders (aka trap muscles). \n\n 2.Take a small step back, with your feet slightly wider than hip-width apart, your toes facing slightly outward. Flex your core, squeeze your glutes, and take a deep breath. Think about pushing your hips down and back, like you’re sitting down in a chair. \n\n 3.Keep going until your legs are about parallel to your hips. Once you’ve hit the bottom of the squat, take a deep breath and explode back up to the starting position."
+    },
+    "SplitSquat": {
+        "id": "SplitSquat_image",
+        "name": "Split Squat",
+        "description": "1. Start in a split leg position, with one leg forward and one leg back. \n\n 2. Flex your knees and lower your hips, until the back knee is just above the floor. \n\n 3. Stand back up and return to the starting position. \n\n 4. Repeat this movement for as many reps as recommended and then switch legs."
+    },
+    "LegExtension": {
+        "id": "LegExtension_image",
+        "name": "Leg Extension",
+        "description": "1. Place your hands on the hand bars. \n\n 2. Lift the weight while exhaling until your legs are almost straight. Do not lock your knees. Keep your back against the backrest and do not arch your back. \n\n 3. Exhale and lower the weight back to starting position. \n\n 4. Do three sets of eight to 12 repetitions."
+    },
+    "LegPress": {
+        "id": "LegPress_image",
+        "name": "Leg Press",
+        "description": "1. Choose the appropriate weight and set the seat so that the knees are bent just over right angles. \n\n 2. Position feet about shoulder width apart. \n\n 3. Try to push through your heels, keeping the knees lined up over the toes. \n\n 4. Extend the legs until nearly straight, avoiding locking the knees. \n\n 5. Lower the weight slowly back towards the starting position \n\n 6. Repeat for the number of reps required."
+    },
+    "PistolSquat": {
+        "id": "PistolSquat_image",
+        "name": "Pistol Squat",
+        "description": "1. Pick a base leg to work on. Shift your other leg forward in front of you and lift your foot just off the floor. \n\n 2. Extend your arms out in front of yourself for balance. Squeeze your abs and glutes to create tension to prepare for the movement. \n\n 3. Push your butt back, then bend at the knee to slowly lower down into the squat. Whitman says that it's okay to bend your back to get into the position. \n\n 4. Lower until you reach the bottom position that your mobility allows, keeping your opposite leg elevated off the floor. \n\n 5. Hold for a count, then press off the floor with your planted foot to explode back up to standing. Squeeze your glutes at the top."
+    },
+    "GobletSquat": {
+        "id": "GobletSquat_image",
+        "name": "Goblet Squat",
+        "description": "1. Hold the dumbbell vertically, gripping it with both hands underneath the top of the weight. Keep the dumbbell close to your chest throughout the entire movement. \n\n 2. Point your knees in the same direction as your toes. \n\n 3. Inhale and begin to squat, sitting back in your hips, keeping your core tight and torso upright. \n\n 4. If your level of flexibility allows it, track your elbows between your knees, stopping when they touch. Don’t touch your elbows to your knees if it causes you to lose proper form. \n\n 5. Drive through your heels back to the starting position. Keep your feet flat on the floor throughout the movement and avoid lifting your heels in an attempt to get your hips lower. \n\n 6. Start with 2 to 3 sets of 10 to 15 reps, depending on your fitness level and goals. The weight should be challenging enough that you wouldn’t be able to complete 1 more rep with proper form. \n\n 7. Rest for 30 to 60 seconds between each set."
+    },
+    "OverHead": {
+        "id": "OverheadPress_image",
+        "name": "Over Head",
+        "description": "1. Stand with the bar on your front shoulders, and your hands next to your shoulders. \n\n 2. Press the bar over your head, until it’s balanced over your shoulders and mid-foot. \n\n 3. Lock your elbows at the top, and shrug your shoulders to the ceiling. \n\n 4. Hold the bar for a second at the top. Then lower it back to your front shoulders and repeat."
+    },
+    "SideLateral": {
+        "id": "SideLateral_image",
+        "name": "Side Lateral",
+        "description": "1. Stand with your feet around shoulder-width apart, holding a dumbbell in each hand by your sides, palms facing inwards. \n\n 2. Engage your core and squeeze your glutes to provide a strong base, and then raise your arms out to the sides, stopping when your arms are parallel with the floor. \n\n 3. At the top of the exercise, your arms should be slightly in front of your torso, and your elbows should have a soft bend. \n\n 4. Pause before slowly lowering back to starting position."
+    },
+    "FacePull": {
+        "id": "Facepull_image",
+        "name": "Face Pull",
+        "description": "1. Set a cable machine to chest height and add a rope attachment. \n\n 2. Grip the rope using a neutral grip, so that the palms are facing each other. \n\n 3. Take a step backwards and adopt a shoulder width or staggered stance. \n\n 4. Begin the reps by pulling the rope towards your face, pulling the rope apart as you do so. Keep your elbows pointed upwards and to the side as you pull. \n\n 5. Squeeze your rear delts and take a short pause before returning the rope to the starting position with control."
+    },
+    "ReverseFly": {
+        "id": "ReverseFly_image",
+        "name": "Reverse Fly",
+        "description": "1. Raise both arms out to your side on an exhale. Keep a soft bend in your elbows. Squeeze the shoulder blades together as you pull them toward the spine. \n\n 2. Lower the weight back to the start position as you inhale. Avoid hunching your shoulders, and keep your chin tucked to maintain a neutral spine during the exercise."
+    },
+    "FrontRaise": {
+        "id": "FrontRaise_image",
+        "name": "Front Raise",
+        "description": "1.Lift the weights upward while inhaling. Your arms are extended, palms facing down, with a slight bend in the elbows to reduce the stress on the joints. \n\n 2. Pause briefly when your arms are horizontal to the floor. \n\n 3. Lower the dumbbells to the starting position (at the thighs) with a slow and controlled motion while exhaling."
+    },
+    "UprightRow": {
+        "id": "UprightRow_image",
+        "name": "Upright Row",
+        "description": "1. Breathe in and brace the abdominals. Keep your back straight, chest up, and eyes focused forward. \n\n 2. Lift the barbell up (toward the chin) as you exhale. Lead with the elbows and keep the bar close to the body. \n\n 3. Pause at the top of the lift. \n\n 4. Lower the barbell as you inhale, returning it to the starting position."
+    },
+    "FrontPlank": {
+        "id": "FrontPlank_image",
+        "name": "Front Plank",
+        "description": "1. Begin in the plank position, face down with your forearms and toes on the floor. Your elbows are directly under your shoulders and your forearms are facing forward. Your head is relaxed and you should be looking at the floor. \n\n 2. Engage your abdominal muscles, drawing your navel toward your spine. Keep your torso straight and rigid and your body in a straight line from your ears to your toes with no sagging or bending. This is the neutral spine position. Ensure your shoulders are down, not creeping up toward your ears. Your heels should be over the balls of your feet. \n\n 3. Hold this position for 10 seconds. Release to floor. \n\n 4. Over time work up to 30, 45, or 60 seconds."
+    },
+    "LegRaise": {
+        "id": "LegRaise_image",
+        "name": "Leg Raise",
+        "description": ""
+    },
+    "V-Ups": {
+        "id": "Vups_image",
+        "name": "V-Ups",
+        "description": ""
+    },
+    "SitUps": {
+        "id": "SitUps_image",
+        "name": "Sit Ups",
+        "description": ""
+    },
+    "CableCrunch": {
+        "id": "CableCrunch_image",
+        "name": "Cable Crunch",
+        "description": ""
+    },
+    "BicycleCrunch": {
+        "id": "BicycleCrunch_image",
+        "name": "Bicycle Crunch",
+        "description": ""
+    },
 }

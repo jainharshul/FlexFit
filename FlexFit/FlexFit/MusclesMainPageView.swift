@@ -3,6 +3,15 @@ import SwiftUI
 
 struct MusclesMainPageView: View {
     
+    let muscleGroups: [(destination: AnyView, imageName: String, muscleName: String)] = [
+        (destination: AnyView(ChestExercisesView()), imageName: "chest_image", muscleName: "Chest"),
+        (destination: AnyView(TricepExercisesView()), imageName: "tricep_image", muscleName: "Triceps"),
+        (destination: AnyView(QuadExercisesView()), imageName: "quad_image", muscleName: "Quads"),
+        (destination: AnyView(ShoulderExercisesView()), imageName: "shoulder_image", muscleName: "Shoulders"),
+        (destination: AnyView(BicepExercisesView()), imageName: "bicep_image", muscleName: "Biceps"),
+        (destination: AnyView(AbExercisesView()), imageName: "abdominal_image", muscleName: "Abs")
+    ]
+    
     var body: some View {
         Color(red: 0.22, green: 0.22, blue: 0.22, opacity: 1.0)
             .edgesIgnoringSafeArea(.all)
@@ -14,210 +23,51 @@ struct MusclesMainPageView: View {
                         .foregroundColor(.white)
                         .padding(.top, 20)
                     
-                    ZStack {
+                    ZStack(alignment: .center){
                         RoundedRectangle(cornerRadius: 10)
                             .foregroundColor(Color.gray.opacity(0.2))
-                            .frame(height: 50)
-                            .padding(.leading)
-                        Text("Please select the muscle you want to workout")
+                            .frame(height: 80)
+
+                        Text("Please select the muscle you would like to workout")
                             .font(.headline)
-                            .padding(.top, 10)
                             .foregroundColor(.white)
+                            .shadow(radius: 4)
+
                     }
-                    .padding(.leading)
                     .padding(.horizontal)
+
                     
                     ScrollView {
                         VStack{
-                            NavigationLink(destination: ChestExercisesView()) {
-                                ZStack(alignment: .bottom) {
-                                    Color.black
-                                        .cornerRadius(30)
-                                    
-                                    VStack {
-                                        Image("chest_image")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .scaledToFit()
-                                            .frame(width: 150, height: 150)
+                            ForEach(muscleGroups, id: \.muscleName) { muscleGroup in
+                                NavigationLink(destination: muscleGroup.destination) {
+                                    ZStack(alignment: .bottom) {
+                                        Color.black
                                             .cornerRadius(30)
+                                            .buttonStyle(PlainButtonStyle())
+                                            .opacity(0.5)
+                                            .shadow(radius: 4)
                                         
-                                        Text("Chest".uppercased())
-                                            .padding(.horizontal, 16)
-                                            .padding(8)
-                                            .background(Color.black)
-                                            .cornerRadius(8)
-                                            .foregroundColor(.white)
-                                            .font(.headline.bold())
-                                            .fixedSize(horizontal: true, vertical: false)
-                                            .lineLimit(1)
-                                            .frame(maxWidth: 140)
+                                        VStack {
+                                            Image(muscleGroup.imageName)
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fit)
+                                                .scaledToFit()
+                                                .frame(width: 150, height: 150)
+                                                .cornerRadius(30)
+                                                .padding(.top)
+                                            
+                                            Text(muscleGroup.muscleName.uppercased())
+                                                .padding(.horizontal, 16)
+                                                .foregroundColor(.white)
+                                                .font(.headline.bold())
+                                                .padding(.bottom)
+                                        }
+                                        .cornerRadius(30)
+                                        .shadow(radius: 4)
                                     }
-                                    .cornerRadius(30)
-                                    .shadow(radius: 4)
                                 }
                             }
-                            .buttonStyle(PlainButtonStyle())
-                            
-                            
-                            
-                            NavigationLink(destination: TricepExercisesView()) {
-                                ZStack(alignment: .bottom) {
-                                    Color.black
-                                        .cornerRadius(30)
-                                    
-                                    VStack {
-                                        Image("tricep_image")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .scaledToFit()
-                                            .frame(width: 150, height: 150)
-                                            .cornerRadius(30)
-                                        
-                                        Text("Triceps".uppercased())
-                                            .padding(.horizontal, 16)
-                                            .padding(8)
-                                            .background(Color.black.opacity(0.5))
-                                            .cornerRadius(8)
-                                            .foregroundColor(.white)
-                                            .font(.headline.bold())
-                                            .fixedSize(horizontal: true, vertical: false)
-                                            .lineLimit(1)
-                                            .frame(maxWidth: 140)
-                                    }
-                                    .cornerRadius(30)
-                                    .shadow(radius: 4)
-                                }
-                            }
-                            .buttonStyle(PlainButtonStyle())
-                            
-                            
-                            
-                            NavigationLink(destination: QuadExercisesView()) {
-                                ZStack(alignment: .bottom) {
-                                    Color.black
-                                        .cornerRadius(30)
-                                    
-                                    VStack {
-                                        Image("quad_image")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .scaledToFit()
-                                            .frame(width: 150, height: 150)
-                                            .cornerRadius(30)
-                                        
-                                        Text("Quads".uppercased())
-                                            .padding(.horizontal, 16)
-                                            .padding(8)
-                                            .background(Color.black.opacity(0.5))
-                                            .cornerRadius(8)
-                                            .foregroundColor(.white)
-                                            .font(.headline.bold())
-                                            .fixedSize(horizontal: true, vertical: false)
-                                            .lineLimit(1)
-                                            .frame(maxWidth: 140)
-                                    }
-                                    .cornerRadius(30)
-                                    .shadow(radius: 4)
-                                }
-                            }
-                            .buttonStyle(PlainButtonStyle())
-                            
-                            
-                            
-                            NavigationLink(destination: ShoulderExercisesView()) {
-                                ZStack(alignment: .bottom) {
-                                    Color.black
-                                        .cornerRadius(30)
-                                    
-                                    VStack {
-                                        Image("shoulder_image")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .scaledToFit()
-                                            .frame(width: 150, height: 150)
-                                            .cornerRadius(30)
-                                        
-                                        Text("Shoulders".uppercased())
-                                            .padding(.horizontal, 16)
-                                            .padding(8)
-                                            .background(Color.black.opacity(0.5))
-                                            .cornerRadius(8)
-                                            .foregroundColor(.white)
-                                            .font(.headline.bold())
-                                            .fixedSize(horizontal: true, vertical: false)
-                                            .lineLimit(1)
-                                            .frame(maxWidth: 140)
-                                    }
-                                    .cornerRadius(30)
-                                    .shadow(radius: 4)
-                                }
-                            }
-                            .buttonStyle(PlainButtonStyle())
-                            
-                            
-                            
-                            NavigationLink(destination: BicepExercisesView()) {
-                                ZStack(alignment: .bottom) {
-                                    Color.black
-                                        .cornerRadius(30)
-                                    
-                                    VStack {
-                                        Image("bicep_image")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .scaledToFit()
-                                            .frame(width: 150, height: 150)
-                                            .cornerRadius(30)
-                                        
-                                        Text("Biceps".uppercased())
-                                            .padding(.horizontal, 16)
-                                            .padding(8)
-                                            .background(Color.black.opacity(0.5))
-                                            .cornerRadius(8)
-                                            .foregroundColor(.white)
-                                            .font(.headline.bold())
-                                            .fixedSize(horizontal: true, vertical: false)
-                                            .lineLimit(1)
-                                            .frame(maxWidth: 140)
-                                    }
-                                    .cornerRadius(30)
-                                    .shadow(radius: 4)
-                                }
-                            }
-                            .buttonStyle(PlainButtonStyle())
-                            
-                            
-                            
-                            NavigationLink(destination: AbExercisesView()) {
-                                ZStack(alignment: .bottom) {
-                                    Color.black
-                                        .cornerRadius(30)
-                                    
-                                    VStack {
-                                        Image("abdominal_image")
-                                            .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .scaledToFit()
-                                            .frame(width: 150, height: 150)
-                                            .cornerRadius(30)
-                                        
-                                        Text("Abs".uppercased())
-                                            .padding(.horizontal, 16)
-                                            .padding(8)
-                                            .background(Color.black.opacity(0.5))
-                                            .cornerRadius(8)
-                                            .foregroundColor(.white)
-                                            .font(.headline.bold())
-                                            .fixedSize(horizontal: true, vertical: false)
-                                            .lineLimit(1)
-                                            .frame(maxWidth: 140)
-                                    }
-                                    .cornerRadius(30)
-                                    .shadow(radius: 4)
-                                }
-                            }
-                            .buttonStyle(PlainButtonStyle())
                         }
                         .padding(.horizontal)
                     }
@@ -225,6 +75,7 @@ struct MusclesMainPageView: View {
             )
     }
 }
+
 
 struct MusclesMainPageView_Previews: PreviewProvider {
     static var previews: some View {

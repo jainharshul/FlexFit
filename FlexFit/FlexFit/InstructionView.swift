@@ -25,10 +25,15 @@ struct InstructionView: View {
                     .resizable()
                     .scaledToFit()
                     .cornerRadius(30)
+                Text("Instructions")
+                    .foregroundColor(.white)
+                    .font(.title.bold())
                 ScrollView{
                 Text(exercises.description)
                     .padding()
+                    .padding()
                     .foregroundColor(.white)
+
                     
             }
         }

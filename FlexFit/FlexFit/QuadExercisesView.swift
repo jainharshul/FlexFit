@@ -2,6 +2,8 @@
 import SwiftUI
 
 struct QuadExercisesView: View {
+    let exercises: [String: Exercises] = loadExerciseData()
+
     
     var body: some View {
         Color(red: 0.22, green: 0.22, blue: 0.22, opacity: 1.0)
@@ -14,26 +16,26 @@ struct QuadExercisesView: View {
                         .foregroundColor(.white)
                         .padding(.top, 20)
                     
-                    ZStack {
+                    ZStack(alignment: .center){
                         RoundedRectangle(cornerRadius: 10)
                             .foregroundColor(Color.gray.opacity(0.2))
-                            .frame(height: 50)
-                            .padding(.leading)
-                        Text("Please select the muscle you want to workout")
+                            .frame(height: 80)
+                        Text("Please select an exercise you would like to workout")
                             .font(.headline)
-                            .padding(.top, 10)
                             .foregroundColor(.white)
                     }
-                    .padding(.leading)
                     .padding(.horizontal)
                     
                     ScrollView {
                         VStack{
-                            NavigationLink(destination: ChestExercisesView()) {
-                                ZStack(alignment: .bottom) {
-                                    Color.black
-                                        .cornerRadius(30)
-                                    
+                            NavigationLink(destination: InstructionView(exercises: exercises["BarbellSquat"]!)) {
+                                    ZStack(alignment: .bottom) {
+                                        Color.black
+                                            .cornerRadius(30)
+                                            .buttonStyle(PlainButtonStyle())
+                                            .opacity(0.5)
+                                            .shadow(radius: 4)
+                                
                                     VStack {
                                         Image("BarbellSquat_image")
                                             .resizable()
@@ -41,31 +43,29 @@ struct QuadExercisesView: View {
                                             .scaledToFit()
                                             .frame(width: 150, height: 150)
                                             .cornerRadius(30)
+                                            .padding(.top)
                                         
                                         Text("Barbell squat".uppercased())
                                             .padding(.horizontal, 16)
-                                            .padding(8)
-                                            .background(Color.black)
-                                            .cornerRadius(8)
                                             .foregroundColor(.white)
                                             .font(.headline.bold())
-                                            .fixedSize(horizontal: true, vertical: false)
-                                            .lineLimit(1)
-                                            .frame(maxWidth: 140)
+                                            .padding(.bottom)
                                     }
                                     .cornerRadius(30)
                                     .shadow(radius: 4)
                                 }
                             }
-                            .buttonStyle(PlainButtonStyle())
                             
                             
                             
-                            NavigationLink(destination: TricepExercisesView()) {
-                                ZStack(alignment: .bottom) {
-                                    Color.black
-                                        .cornerRadius(30)
-                                    
+                            NavigationLink(destination: InstructionView(exercises: exercises["SplitSquat"]!)) {
+                                    ZStack(alignment: .bottom) {
+                                        Color.black
+                                            .cornerRadius(30)
+                                            .buttonStyle(PlainButtonStyle())
+                                            .opacity(0.5)
+                                            .shadow(radius: 4)
+                                        
                                     VStack {
                                         Image("SplitSquat_image")
                                             .resizable()
@@ -73,31 +73,29 @@ struct QuadExercisesView: View {
                                             .scaledToFit()
                                             .frame(width: 150, height: 150)
                                             .cornerRadius(30)
+                                            .padding(.top)
                                         
                                         Text("Split Squat".uppercased())
                                             .padding(.horizontal, 16)
-                                            .padding(8)
-                                            .background(Color.black.opacity(0.5))
-                                            .cornerRadius(8)
                                             .foregroundColor(.white)
                                             .font(.headline.bold())
-                                            .fixedSize(horizontal: true, vertical: false)
-                                            .lineLimit(1)
-                                            .frame(maxWidth: 140)
+                                            .padding(.bottom)
                                     }
                                     .cornerRadius(30)
                                     .shadow(radius: 4)
                                 }
                             }
-                            .buttonStyle(PlainButtonStyle())
                             
                             
                             
-                            NavigationLink(destination: QuadExercisesView()) {
-                                ZStack(alignment: .bottom) {
-                                    Color.black
-                                        .cornerRadius(30)
-                                    
+                            NavigationLink(destination: InstructionView(exercises: exercises["LegExtension"]!)) {
+                                    ZStack(alignment: .bottom) {
+                                        Color.black
+                                            .cornerRadius(30)
+                                            .buttonStyle(PlainButtonStyle())
+                                            .opacity(0.5)
+                                            .shadow(radius: 4)
+                                        
                                     VStack {
                                         Image("LegExtension_image")
                                             .resizable()
@@ -105,31 +103,29 @@ struct QuadExercisesView: View {
                                             .scaledToFit()
                                             .frame(width: 150, height: 150)
                                             .cornerRadius(30)
+                                            .padding(.top)
                                         
                                         Text("Leg Extension".uppercased())
                                             .padding(.horizontal, 16)
-                                            .padding(8)
-                                            .background(Color.black.opacity(0.5))
-                                            .cornerRadius(8)
                                             .foregroundColor(.white)
                                             .font(.headline.bold())
-                                            .fixedSize(horizontal: true, vertical: false)
-                                            .lineLimit(1)
-                                            .frame(maxWidth: 140)
+                                            .padding(.bottom)
                                     }
                                     .cornerRadius(30)
                                     .shadow(radius: 4)
                                 }
                             }
-                            .buttonStyle(PlainButtonStyle())
                             
                             
                             
-                            NavigationLink(destination: ShoulderExercisesView()) {
-                                ZStack(alignment: .bottom) {
-                                    Color.black
-                                        .cornerRadius(30)
-                                    
+                            NavigationLink(destination: InstructionView(exercises: exercises["LegPress"]!)) {
+                                    ZStack(alignment: .bottom) {
+                                        Color.black
+                                            .cornerRadius(30)
+                                            .buttonStyle(PlainButtonStyle())
+                                            .opacity(0.5)
+                                            .shadow(radius: 4)
+                                        
                                     VStack {
                                         Image("LegPress_image")
                                             .resizable()
@@ -137,31 +133,29 @@ struct QuadExercisesView: View {
                                             .scaledToFit()
                                             .frame(width: 150, height: 150)
                                             .cornerRadius(30)
+                                            .padding(.top)
                                         
                                         Text("Leg press".uppercased())
                                             .padding(.horizontal, 16)
-                                            .padding(8)
-                                            .background(Color.black.opacity(0.5))
-                                            .cornerRadius(8)
                                             .foregroundColor(.white)
                                             .font(.headline.bold())
-                                            .fixedSize(horizontal: true, vertical: false)
-                                            .lineLimit(1)
-                                            .frame(maxWidth: 140)
+                                            .padding(.bottom)
                                     }
                                     .cornerRadius(30)
                                     .shadow(radius: 4)
                                 }
                             }
-                            .buttonStyle(PlainButtonStyle())
                             
                             
                             
-                            NavigationLink(destination: BicepExercisesView()) {
-                                ZStack(alignment: .bottom) {
-                                    Color.black
-                                        .cornerRadius(30)
-                                    
+                            NavigationLink(destination: InstructionView(exercises: exercises["PistolSquat"]!)) {
+                                    ZStack(alignment: .bottom) {
+                                        Color.black
+                                            .cornerRadius(30)
+                                            .buttonStyle(PlainButtonStyle())
+                                            .opacity(0.5)
+                                            .shadow(radius: 4)
+                                
                                     VStack {
                                         Image("PistolSquat_image")
                                             .resizable()
@@ -169,31 +163,29 @@ struct QuadExercisesView: View {
                                             .scaledToFit()
                                             .frame(width: 150, height: 150)
                                             .cornerRadius(30)
+                                            .padding(.top)
                                         
                                         Text("pistol squat".uppercased())
                                             .padding(.horizontal, 16)
-                                            .padding(8)
-                                            .background(Color.black.opacity(0.5))
-                                            .cornerRadius(8)
                                             .foregroundColor(.white)
                                             .font(.headline.bold())
-                                            .fixedSize(horizontal: true, vertical: false)
-                                            .lineLimit(1)
-                                            .frame(maxWidth: 140)
+                                            .padding(.bottom)
                                     }
                                     .cornerRadius(30)
                                     .shadow(radius: 4)
                                 }
                             }
-                            .buttonStyle(PlainButtonStyle())
                             
                             
                             
-                            NavigationLink(destination: AbExercisesView()) {
-                                ZStack(alignment: .bottom) {
-                                    Color.black
-                                        .cornerRadius(30)
-                                    
+                            NavigationLink(destination: InstructionView(exercises: exercises["GobletSquat"]!)) {
+                                    ZStack(alignment: .bottom) {
+                                        Color.black
+                                            .cornerRadius(30)
+                                            .buttonStyle(PlainButtonStyle())
+                                            .opacity(0.5)
+                                            .shadow(radius: 4)
+                                
                                     VStack {
                                         Image("GobletSquat_image")
                                             .resizable()
@@ -201,23 +193,18 @@ struct QuadExercisesView: View {
                                             .scaledToFit()
                                             .frame(width: 150, height: 150)
                                             .cornerRadius(30)
+                                            .padding(.top)
                                         
                                         Text("Goblet squat".uppercased())
                                             .padding(.horizontal, 16)
-                                            .padding(8)
-                                            .background(Color.black.opacity(0.5))
-                                            .cornerRadius(8)
                                             .foregroundColor(.white)
                                             .font(.headline.bold())
-                                            .fixedSize(horizontal: true, vertical: false)
-                                            .lineLimit(1)
-                                            .frame(maxWidth: 140)
+                                            .padding(.bottom)
                                     }
                                     .cornerRadius(30)
                                     .shadow(radius: 4)
                                 }
                             }
-                            .buttonStyle(PlainButtonStyle())
                         }
                         .padding(.horizontal)
                     }
