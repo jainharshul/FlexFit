@@ -13,14 +13,12 @@ struct MusclesMainPageView: View {
     ]
     
     var body: some View {
-        Color(red: 0.22, green: 0.22, blue: 0.22, opacity: 1.0)
-            .edgesIgnoringSafeArea(.all)
-            .overlay(
+        
                 VStack(alignment: .leading, spacing: 20) {
                     Text("MUSCLE GROUPS")
                         .font(.title.bold())
                         .padding(.leading)
-                        .foregroundColor(.white)
+                        
                         .padding(.top, 20)
                     
                     ZStack(alignment: .center){
@@ -30,7 +28,7 @@ struct MusclesMainPageView: View {
 
                         Text("Please select the muscle you would like to workout")
                             .font(.headline)
-                            .foregroundColor(.white)
+                            
                             .shadow(radius: 4)
 
                     }
@@ -42,7 +40,7 @@ struct MusclesMainPageView: View {
                             ForEach(muscleGroups, id: \.muscleName) { muscleGroup in
                                 NavigationLink(destination: muscleGroup.destination) {
                                     ZStack(alignment: .bottom) {
-                                        Color.black
+                                        Color.gray.opacity(0.2)
                                             .cornerRadius(30)
                                             .buttonStyle(PlainButtonStyle())
                                             .opacity(0.5)
@@ -59,7 +57,7 @@ struct MusclesMainPageView: View {
                                             
                                             Text(muscleGroup.muscleName.uppercased())
                                                 .padding(.horizontal, 16)
-                                                .foregroundColor(.white)
+                                                
                                                 .font(.headline.bold())
                                                 .padding(.bottom)
                                         }
@@ -72,7 +70,7 @@ struct MusclesMainPageView: View {
                         .padding(.horizontal)
                     }
                 }
-            )
+           
     }
 }
 

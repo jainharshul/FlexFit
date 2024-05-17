@@ -4,14 +4,12 @@ struct ChestExercisesView: View {
     let exercises: [String: Exercises] = loadExerciseData()
     
     var body: some View {
-        Color(red: 0.22, green: 0.22, blue: 0.22, opacity: 1.0)
-            .edgesIgnoringSafeArea(.all)
-            .overlay(
+        
                 VStack(alignment: .leading, spacing: 20) {
                     Text("CHEST")
                         .font(.title.bold())
                         .padding(.leading)
-                        .foregroundColor(.white)
+                        
                         .padding(.top, 20)
                     
                     ZStack(alignment: .center){
@@ -20,7 +18,7 @@ struct ChestExercisesView: View {
                             .frame(height: 80)
                         Text("Please select an exercise you would like to workout")
                             .font(.headline)
-                            .foregroundColor(.white)
+                            
                     }
                     .padding(.horizontal)
                     
@@ -28,7 +26,7 @@ struct ChestExercisesView: View {
                         VStack{
                             NavigationLink(destination: InstructionView(exercises: exercises["BenchPress"]!)) {
                                 ZStack(alignment: .bottom) {
-                                    Color.black
+                                    Color.gray.opacity(0.2)
                                         .cornerRadius(30)
                                         .buttonStyle(PlainButtonStyle())
                                         .opacity(0.5)
@@ -45,7 +43,7 @@ struct ChestExercisesView: View {
                                         
                                         Text("Bench press".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -58,7 +56,7 @@ struct ChestExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["PushUps"]!)) {
                                 ZStack(alignment: .bottom) {
-                                    Color.black
+                                    Color.gray.opacity(0.2)
                                         .cornerRadius(30)
                                         .buttonStyle(PlainButtonStyle())
                                         .opacity(0.5)
@@ -75,7 +73,7 @@ struct ChestExercisesView: View {
                                         
                                         Text("Push ups".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -88,7 +86,7 @@ struct ChestExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["CableCross"]!)) {
                                 ZStack(alignment: .bottom) {
-                                    Color.black
+                                    Color.gray.opacity(0.2)
                                         .cornerRadius(30)
                                         .buttonStyle(PlainButtonStyle())
                                         .opacity(0.5)
@@ -105,7 +103,7 @@ struct ChestExercisesView: View {
                                         
                                         Text("Cable Cross".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -118,7 +116,7 @@ struct ChestExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["Dips"]!)) {
                                 ZStack(alignment: .bottom) {
-                                    Color.black
+                                    Color.gray.opacity(0.2)
                                         .cornerRadius(30)
                                         .buttonStyle(PlainButtonStyle())
                                         .opacity(0.5)
@@ -135,7 +133,7 @@ struct ChestExercisesView: View {
                                         
                                         Text("dips".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -148,7 +146,7 @@ struct ChestExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["InclinePress"]!)) {
                                 ZStack(alignment: .bottom) {
-                                    Color.black
+                                    Color.gray.opacity(0.2)
                                         .cornerRadius(30)
                                         .buttonStyle(PlainButtonStyle())
                                         .opacity(0.5)
@@ -165,7 +163,7 @@ struct ChestExercisesView: View {
                                         
                                         Text("Incline Press".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -178,7 +176,7 @@ struct ChestExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["MachineFly"]!)) {
                                 ZStack(alignment: .bottom) {
-                                    Color.black
+                                    Color.gray.opacity(0.2)
                                         .cornerRadius(30)
                                         .buttonStyle(PlainButtonStyle())
                                         .opacity(0.5)
@@ -195,7 +193,7 @@ struct ChestExercisesView: View {
                                         
                                         Text("Machine Fly".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -207,7 +205,7 @@ struct ChestExercisesView: View {
                         .padding(.horizontal)
                     }
                 }
-            )
+            
     }
 }
 #Preview {

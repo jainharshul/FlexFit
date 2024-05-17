@@ -6,14 +6,12 @@ struct ShoulderExercisesView: View {
     
     
     var body: some View {
-        Color(red: 0.22, green: 0.22, blue: 0.22, opacity: 1.0)
-            .edgesIgnoringSafeArea(.all)
-            .overlay(
+        
                 VStack(alignment: .leading, spacing: 20) {
                     Text("SHOULDERS")
                         .font(.title.bold())
                         .padding(.leading)
-                        .foregroundColor(.white)
+                        
                         .padding(.top, 20)
                     
                     ZStack(alignment: .center){
@@ -22,7 +20,7 @@ struct ShoulderExercisesView: View {
                             .frame(height: 80)
                         Text("Please select an exercise you would like to workout")
                             .font(.headline)
-                            .foregroundColor(.white)
+                           
                     }
                     .padding(.horizontal)
                     
@@ -30,7 +28,7 @@ struct ShoulderExercisesView: View {
                         VStack{
                             NavigationLink(destination: InstructionView(exercises: exercises["OverHead"]!)) {
                                     ZStack(alignment: .bottom) {
-                                        Color.black
+                                        Color.gray.opacity(0.2)
                                             .cornerRadius(30)
                                             .buttonStyle(PlainButtonStyle())
                                             .opacity(0.5)
@@ -47,7 +45,7 @@ struct ShoulderExercisesView: View {
                                         
                                         Text("Over head".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -60,7 +58,7 @@ struct ShoulderExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["SideLateral"]!)) {
                                     ZStack(alignment: .bottom) {
-                                        Color.black
+                                        Color.gray.opacity(0.2)
                                             .cornerRadius(30)
                                             .buttonStyle(PlainButtonStyle())
                                             .opacity(0.5)
@@ -77,7 +75,7 @@ struct ShoulderExercisesView: View {
                                         
                                         Text("Side lateral".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -90,7 +88,7 @@ struct ShoulderExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["FacePull"]!)) {
                                     ZStack(alignment: .bottom) {
-                                        Color.black
+                                        Color.gray.opacity(0.2)
                                             .cornerRadius(30)
                                             .buttonStyle(PlainButtonStyle())
                                             .opacity(0.5)
@@ -108,7 +106,7 @@ struct ShoulderExercisesView: View {
                                         Text("facepull".uppercased())
                                             .padding(.horizontal, 16)
                                             .foregroundColor(.white)
-                                            .font(.headline.bold())
+                                            
                                             .padding(.bottom)
                                     }
                                     .cornerRadius(30)
@@ -120,7 +118,7 @@ struct ShoulderExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["ReverseFly"]!)) {
                                     ZStack(alignment: .bottom) {
-                                        Color.black
+                                        Color.gray.opacity(0.2)
                                             .cornerRadius(30)
                                             .buttonStyle(PlainButtonStyle())
                                             .opacity(0.5)
@@ -137,7 +135,7 @@ struct ShoulderExercisesView: View {
                                         
                                         Text("reverse fly".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -150,7 +148,7 @@ struct ShoulderExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["FrontRaise"]!)) {
                                     ZStack(alignment: .bottom) {
-                                        Color.black
+                                        Color.gray.opacity(0.2)
                                             .cornerRadius(30)
                                             .buttonStyle(PlainButtonStyle())
                                             .opacity(0.5)
@@ -167,7 +165,7 @@ struct ShoulderExercisesView: View {
                                         
                                         Text("Front raise".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -180,7 +178,7 @@ struct ShoulderExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["UprightRow"]!)) {
                                     ZStack(alignment: .bottom) {
-                                        Color.black
+                                        Color.gray.opacity(0.2)
                                             .cornerRadius(30)
                                             .buttonStyle(PlainButtonStyle())
                                             .opacity(0.5)
@@ -196,7 +194,7 @@ struct ShoulderExercisesView: View {
                                         
                                         Text("upright row".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -208,7 +206,7 @@ struct ShoulderExercisesView: View {
                         .padding(.horizontal)
                     }
                 }
-            )
+            
     }
 }
 #Preview {

@@ -5,14 +5,26 @@
 //  Created by Harshul Jain on 4/27/24.
 //
 
+
 import SwiftUI
 
 struct SettingsView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+    @AppStorage("isDarkMode") private var isDarkMode = false
+
+        var body: some View {
+            NavigationView {
+                Form {
+                    Toggle(isOn: $isDarkMode) {
+                        Text("Dark Mode")
+                    }
+                }
+                .navigationBarTitle("Settings")
+            }
+        }
 }
 
-#Preview {
-    SettingsView()
+struct SettingsView_Previews: PreviewProvider {
+    static var previews: some View {
+        SettingsView()
+    }
 }

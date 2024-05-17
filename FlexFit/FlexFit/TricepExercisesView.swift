@@ -6,14 +6,12 @@ struct TricepExercisesView: View {
 
     
     var body: some View {
-        Color(red: 0.22, green: 0.22, blue: 0.22, opacity: 1.0)
-            .edgesIgnoringSafeArea(.all)
-            .overlay(
+        
                 VStack(alignment: .leading, spacing: 20) {
                     Text("TRICEPS")
                         .font(.title.bold())
                         .padding(.leading)
-                        .foregroundColor(.white)
+                        
                         .padding(.top, 20)
                     
                     ZStack(alignment: .center){
@@ -22,7 +20,7 @@ struct TricepExercisesView: View {
                             .frame(height: 80)
                         Text("Please select an exercise you would like to workout")
                             .font(.headline)
-                            .foregroundColor(.white)
+                            
                     }
                     .padding(.horizontal)
                     
@@ -30,7 +28,7 @@ struct TricepExercisesView: View {
                         VStack{
                             NavigationLink(destination: InstructionView(exercises: exercises["CablePush"]!)) {
                                 ZStack(alignment: .bottom) {
-                                    Color.black
+                                    Color.gray.opacity(0.2)
                                         .cornerRadius(30)
                                         .buttonStyle(PlainButtonStyle())
                                         .opacity(0.5)
@@ -47,7 +45,7 @@ struct TricepExercisesView: View {
                                         
                                         Text("Cable push".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -60,7 +58,7 @@ struct TricepExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["KickBacks"]!)) {
                                 ZStack(alignment: .bottom) {
-                                    Color.black
+                                    Color.gray.opacity(0.2)
                                         .cornerRadius(30)
                                         .buttonStyle(PlainButtonStyle())
                                         .opacity(0.5)
@@ -77,7 +75,7 @@ struct TricepExercisesView: View {
                                         
                                         Text("KickBacks".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -90,7 +88,7 @@ struct TricepExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["SkullCrusher"]!)) {
                                 ZStack(alignment: .bottom) {
-                                    Color.black
+                                    Color.gray.opacity(0.2)
                                         .cornerRadius(30)
                                         .buttonStyle(PlainButtonStyle())
                                         .opacity(0.5)
@@ -107,7 +105,7 @@ struct TricepExercisesView: View {
                                         
                                         Text("Skull crusher".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -120,7 +118,7 @@ struct TricepExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["CloseBench"]!)) {
                                 ZStack(alignment: .bottom) {
-                                    Color.black
+                                    Color.gray.opacity(0.2)
                                         .cornerRadius(30)
                                         .buttonStyle(PlainButtonStyle())
                                         .opacity(0.5)
@@ -137,7 +135,7 @@ struct TricepExercisesView: View {
                                         
                                         Text("Close bench".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -150,7 +148,7 @@ struct TricepExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["TricepExtension"]!)) {
                                 ZStack(alignment: .bottom) {
-                                    Color.black
+                                    Color.gray.opacity(0.2)
                                         .cornerRadius(30)
                                         .buttonStyle(PlainButtonStyle())
                                         .opacity(0.5)
@@ -167,7 +165,7 @@ struct TricepExercisesView: View {
                                         
                                         Text("Tricep ext.".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -180,7 +178,7 @@ struct TricepExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["Dips"]!)) {
                                 ZStack(alignment: .bottom) {
-                                    Color.black
+                                    Color.gray.opacity(0.2)
                                         .cornerRadius(30)
                                         .buttonStyle(PlainButtonStyle())
                                         .opacity(0.5)
@@ -197,7 +195,7 @@ struct TricepExercisesView: View {
                                         
                                         Text("Dips".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -209,7 +207,7 @@ struct TricepExercisesView: View {
                         .padding(.horizontal)
                     }
                 }
-            )
+            //)
     }
 }
 #Preview {

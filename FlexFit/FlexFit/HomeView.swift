@@ -49,8 +49,7 @@ struct HomeView: View {
             }
             .padding()
             .frame(maxHeight: .infinity)
-            .background(Rectangle()
-                .foregroundColor(Color(red: 0.22, green: 0.22, blue: 0.22, opacity: 1.0)))
+           
             .edgesIgnoringSafeArea(.all)
         }
         .navigationViewStyle(StackNavigationViewStyle()) // This helps ensure proper navigation behavior on all devices

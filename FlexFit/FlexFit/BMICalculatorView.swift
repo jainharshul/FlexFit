@@ -17,7 +17,7 @@ struct BMICalculatorView: View {
         VStack(spacing: 20) {
             Text("BMI Calculator")
                 .font(.largeTitle)
-                .foregroundColor(.white)
+                
                 .padding()
                 .padding()
                 .padding()
@@ -26,7 +26,7 @@ struct BMICalculatorView: View {
 
             HStack {
                 Text("Height (in):")
-                    .foregroundColor(.white)
+                    
                 Spacer()
                 TextField("Enter height (in)", text: $height)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -36,7 +36,7 @@ struct BMICalculatorView: View {
 
             HStack {
                 Text("Weight (lb):")
-                    .foregroundColor(.white)
+                    
                 Spacer()
                 TextField("Enter weight (lb)", text: $weight)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -73,7 +73,7 @@ struct BMICalculatorView: View {
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(red: 0.22, green: 0.22, blue: 0.22))
+        
         .edgesIgnoringSafeArea(.all)
     }
 

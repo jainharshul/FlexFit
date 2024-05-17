@@ -12,12 +12,12 @@ struct BMRCalculatorView: View {
         VStack(spacing: 20) {
             Text("BMR Calculator")
                 .font(.largeTitle)
-                .foregroundColor(.white)
+                
                 .padding()
 
             HStack {
                 Text("Age:")
-                    .foregroundColor(.white)
+                    
                 Spacer()
                 TextField("Enter age", text: $age)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -26,7 +26,7 @@ struct BMRCalculatorView: View {
 
             HStack {
                 Text("Gender:")
-                    .foregroundColor(.white)
+                    
                 Spacer()
                 Picker("Gender", selection: $gender) {
                     Text("Male").tag("Male")
@@ -38,7 +38,7 @@ struct BMRCalculatorView: View {
 
             HStack {
                 Text("Height(in):")
-                    .foregroundColor(.white)
+                    
                 Spacer()
                 TextField("Enter height (in)", text: $height)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -47,7 +47,7 @@ struct BMRCalculatorView: View {
 
             HStack {
                 Text("Weight(lb):")
-                    .foregroundColor(.white)
+                    
                 Spacer()
                 TextField("Enter weight (lb)", text: $weight)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -85,7 +85,7 @@ struct BMRCalculatorView: View {
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(red: 0.22, green: 0.22, blue: 0.22))
+        
         .edgesIgnoringSafeArea(.all)
     }
     

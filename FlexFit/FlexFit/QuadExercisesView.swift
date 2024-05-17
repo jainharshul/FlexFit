@@ -6,14 +6,12 @@ struct QuadExercisesView: View {
 
     
     var body: some View {
-        Color(red: 0.22, green: 0.22, blue: 0.22, opacity: 1.0)
-            .edgesIgnoringSafeArea(.all)
-            .overlay(
+        
                 VStack(alignment: .leading, spacing: 20) {
                     Text("QUADS")
                         .font(.title.bold())
                         .padding(.leading)
-                        .foregroundColor(.white)
+                        
                         .padding(.top, 20)
                     
                     ZStack(alignment: .center){
@@ -22,7 +20,7 @@ struct QuadExercisesView: View {
                             .frame(height: 80)
                         Text("Please select an exercise you would like to workout")
                             .font(.headline)
-                            .foregroundColor(.white)
+                            
                     }
                     .padding(.horizontal)
                     
@@ -30,7 +28,7 @@ struct QuadExercisesView: View {
                         VStack{
                             NavigationLink(destination: InstructionView(exercises: exercises["BarbellSquat"]!)) {
                                     ZStack(alignment: .bottom) {
-                                        Color.black
+                                        Color.gray.opacity(0.2)
                                             .cornerRadius(30)
                                             .buttonStyle(PlainButtonStyle())
                                             .opacity(0.5)
@@ -47,7 +45,7 @@ struct QuadExercisesView: View {
                                         
                                         Text("Barbell squat".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -60,7 +58,7 @@ struct QuadExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["SplitSquat"]!)) {
                                     ZStack(alignment: .bottom) {
-                                        Color.black
+                                        Color.gray.opacity(0.2)
                                             .cornerRadius(30)
                                             .buttonStyle(PlainButtonStyle())
                                             .opacity(0.5)
@@ -77,7 +75,7 @@ struct QuadExercisesView: View {
                                         
                                         Text("Split Squat".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -90,7 +88,7 @@ struct QuadExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["LegExtension"]!)) {
                                     ZStack(alignment: .bottom) {
-                                        Color.black
+                                        Color.gray.opacity(0.2)
                                             .cornerRadius(30)
                                             .buttonStyle(PlainButtonStyle())
                                             .opacity(0.5)
@@ -107,7 +105,7 @@ struct QuadExercisesView: View {
                                         
                                         Text("Leg Extension".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -120,7 +118,7 @@ struct QuadExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["LegPress"]!)) {
                                     ZStack(alignment: .bottom) {
-                                        Color.black
+                                        Color.gray.opacity(0.2)
                                             .cornerRadius(30)
                                             .buttonStyle(PlainButtonStyle())
                                             .opacity(0.5)
@@ -137,7 +135,7 @@ struct QuadExercisesView: View {
                                         
                                         Text("Leg press".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -150,7 +148,7 @@ struct QuadExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["PistolSquat"]!)) {
                                     ZStack(alignment: .bottom) {
-                                        Color.black
+                                        Color.gray.opacity(0.2)
                                             .cornerRadius(30)
                                             .buttonStyle(PlainButtonStyle())
                                             .opacity(0.5)
@@ -167,7 +165,7 @@ struct QuadExercisesView: View {
                                         
                                         Text("pistol squat".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -180,7 +178,7 @@ struct QuadExercisesView: View {
                             
                             NavigationLink(destination: InstructionView(exercises: exercises["GobletSquat"]!)) {
                                     ZStack(alignment: .bottom) {
-                                        Color.black
+                                        Color.gray.opacity(0.2)
                                             .cornerRadius(30)
                                             .buttonStyle(PlainButtonStyle())
                                             .opacity(0.5)
@@ -197,7 +195,7 @@ struct QuadExercisesView: View {
                                         
                                         Text("Goblet squat".uppercased())
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            
                                             .font(.headline.bold())
                                             .padding(.bottom)
                                     }
@@ -209,7 +207,7 @@ struct QuadExercisesView: View {
                         .padding(.horizontal)
                     }
                 }
-            )
+            
     }
 }
 #Preview {
