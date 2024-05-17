@@ -56,7 +56,7 @@ struct BMICalculatorView: View {
 
             if showingResult, let result = result {
                 Text("Your BMI is \(String(format: "%.1f", result))")
-                    .foregroundColor(.white)
+                    //.foregroundColor(.white)
                     .padding()
             }
 

@@ -66,7 +66,7 @@ struct BMRCalculatorView: View {
 
             if showingResult, let result = result {
                 Text("Results: \(String(format: "%.2f", result)) calories/day")
-                    .foregroundColor(.white)
+                    //.foregroundColor(.white)
                     .padding()
             }
 
